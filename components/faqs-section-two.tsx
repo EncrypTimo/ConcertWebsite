@@ -8,7 +8,7 @@ export default function FAQs() {
     const faqItems = [
         {
             id: 'item-1',
-            question: 'Binigyan mo ako ng Awit',
+            question: 'Binigyan Mo Ako ng Awit',
             answer: 'Binigyan Mo Ako Ng Awit from the album of Papuri! by Papuri Singers',
         },
         {

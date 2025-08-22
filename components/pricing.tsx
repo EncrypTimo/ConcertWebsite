@@ -9,7 +9,7 @@ export default function Pricing() {
             <div className="mx-auto max-w-6xl px-6">
                 <div className="mx-auto max-w-2xl space-y-6 text-center">
                     <h1 className="text-center text-4xl font-semibold lg:text-5xl">Pricing that Scales with You</h1>
-                    <p>We’re opening doors for <span className='font-bold'>partners and sponsors</span> to join us in making this concert an unforgettable experience.This is more than just music—it’s a movement that brings people together, and <span className='font-bold'>help build our church.</span></p>
+                    <p>We’re opening doors for <span className='font-bold'>partners and sponsors</span> to join us in making this concert an unforgettable experience.This is more than just music,it’s a movement that brings people together, and <span className='font-bold'>help build our church.</span></p>
                 </div>
 
                 <div className="mt-8 grid gap-6 [--color-card:var(--color-muted)] *:border-none *:shadow-none md:mt-20 md:grid-cols-4 dark:[--color-muted:var(--color-zinc-900)]">
