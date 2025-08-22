@@ -8,6 +8,8 @@ import { AnimatedGroup } from '@/components/ui/animated-group'
 import { HeroHeader } from './header'
 
 
+import { AnimationOptions } from 'framer-motion'
+
 const transitionVariants = {
     item: {
         hidden: {
@@ -20,7 +22,7 @@ const transitionVariants = {
             filter: 'blur(0px)',
             y: 0,
             transition: {
-                type: 'spring',
+                type: "spring" as const,
                 bounce: 0.3,
                 duration: 1.5,
             },
@@ -43,32 +45,24 @@ export default function HeroSection() {
                 <section>
                     <div className="relative pt-24 md:pt-36">
                         <AnimatedGroup
-                            variants={{
-                                container: {
-                                    visible: {
-                                        transition: {
-                                            delayChildren: 1,
-                                        },
-                                    },
-                                },
-                                item: {
-                                    hidden: {
-                                        opacity: 0,
-                                        y: 20,
-                                    },
-                                    visible: {
-                                        opacity: 1,
-                                        y: 0,
-                                        transition: {
-                                            type: 'spring',
-                                            bounce: 0.3,
-                                            duration: 2,
-                                        },
-                                    },
-                                },
-                            }}
-                            className="absolute inset-0 -z-20">
-                        </AnimatedGroup>
+  variants={{
+    container: {
+      visible: { transition: { delayChildren: 1 } },
+    },
+    item: {
+      hidden: { opacity: 0, y: 20 },
+      visible: {
+        opacity: 1,
+        y: 0,
+        transition: { type: "spring", bounce: 0.3, duration: 2 },
+      },
+    },
+  }}
+  className="absolute inset-0 -z-20"
+>
+  <div /> {/* or any animated child */}
+</AnimatedGroup>
+
                         <div className="absolute inset-0 -z-10 size-full [background:radial-gradient(125%_125%_at_50%_100%,transparent_0%,var(--color-background)_75%)]"></div>
                         <div className="mx-auto max-w-7xl px-6">
                             <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
