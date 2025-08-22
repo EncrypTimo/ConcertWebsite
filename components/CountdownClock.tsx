@@ -3,8 +3,11 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
+import { useTheme } from "next-themes";
 
 export default function ClockSection() {
+  const { resolvedTheme } = useTheme(); // detect current theme
+
   const targetDate = new Date("2025-10-19T00:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
@@ -32,6 +35,12 @@ export default function ClockSection() {
     return () => clearInterval(timer);
   }, []);
 
+  // dynamic bg + text color based on theme
+  const cardClass =
+    resolvedTheme === "dark"
+      ? "bg-neutral-900 text-white"
+      : "bg-neutral-50 text-black";
+
   return (
     <section className="bg-background">
       <div className="group relative m-auto max-w-5xl px-6">
@@ -48,28 +57,20 @@ export default function ClockSection() {
 
         {/* Countdown Clock Grid */}
         <div className="group-hover:blur-xs mx-auto mt-6 mb-6 grid max-w-2xl grid-cols-2 gap-x-6 gap-y-6 transition-all duration-500 group-hover:opacity-50  sm:gap-y-5  md:grid-cols-4 md:gap-x-4 md:gap-y-8">
-          <div className="p-4 bg-gray-50 rounded-2xl shadow-lg text-center text-black">
-            <p className="text-3xl sm:text-4xl md:text-1xl">
-              {timeLeft.days}
-            </p>
+          <div className={`p-4 rounded-2xl shadow-lg text-center ${cardClass}`}>
+            <p className="text-3xl sm:text-4xl md:text-1xl">{timeLeft.days}</p>
             <span className="block text-sm sm:text-base md:text-lg mt-2">Days</span>
           </div>
-          <div className="p-4 bg-gray-50 rounded-2xl shadow-lg text-center text-black">
-            <p className="text-3xl sm:text-4xl md:text-1xl">
-              {timeLeft.hours}
-            </p>
+          <div className={`p-4 rounded-2xl shadow-lg text-center ${cardClass}`}>
+            <p className="text-3xl sm:text-4xl md:text-1xl">{timeLeft.hours}</p>
             <span className="block text-sm sm:text-base md:text-lg mt-2">Hours</span>
           </div>
-          <div className="p-4 bg-gray-50 rounded-2xl shadow-lg text-center text-black">
-            <p className="text-3xl sm:text-4xl md:text-1xl">
-              {timeLeft.minutes}
-            </p>
+          <div className={`p-4 rounded-2xl shadow-lg text-center ${cardClass}`}>
+            <p className="text-3xl sm:text-4xl md:text-1xl">{timeLeft.minutes}</p>
             <span className="block text-sm sm:text-base md:text-lg mt-2">Minutes</span>
           </div>
-          <div className="p-4 bg-gray-50 rounded-2xl shadow-lg text-center text-black">
-            <p className="text-3xl sm:text-4xl md:text-1xl">
-              {timeLeft.seconds}
-            </p>
+          <div className={`p-4 rounded-2xl shadow-lg text-center ${cardClass}`}>
+            <p className="text-3xl sm:text-4xl md:text-1xl">{timeLeft.seconds}</p>
             <span className="block text-sm sm:text-base md:text-lg mt-2">Seconds</span>
           </div>
         </div>

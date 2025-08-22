@@ -1,11 +1,11 @@
 import HeroSection from "@/components/hero-section";
-import Image from "next";
 import Pricing from "@/components/pricing";
 import Content2 from "@/components/content-2";
 import LineUp from "@/components/faqs-section-two";
 import CallToAction from "@/components/call-to-action";
 import Footer from "@/components/footer";
-import CountdownClock from "@/components/CountdownClock";
+import { ModeToggle } from "@/components/mode-toggle"
+
 export default function Home() {
   return (
     <>
@@ -15,7 +15,7 @@ export default function Home() {
       <Content2 />
       <CallToAction />
       <Footer />
-      
+      <ModeToggle />
       
     </>
     

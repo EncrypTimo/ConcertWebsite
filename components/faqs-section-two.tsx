@@ -9,27 +9,27 @@ export default function FAQs() {
         {
             id: 'item-1',
             question: 'Binigyan mo ako ng Awit',
-            answer: '"Binigyan Mo Ako Ng Awit" from the album of Papuri! by Papuri Singers',
+            answer: '&quot;Binigyan Mo Ako Ng Awit&quot; from the album of Papuri! by Papuri Singers',
         },
         {
             id: 'item-2',
             question: 'Hesus, Aking Musika ',
-            answer: '"Hesus, Aking Musika" from the album of Papuri! by Papuri Singers',
+            answer: '&quot;Hesus, Aking Musika&quot; from the album of Papuri! by Papuri Singers',
         },
         {
             id: 'item-3',
             question: 'Been So Good',
-            answer: '"Been So Good" by Elevation Worship feat. Tiffany Hudson. ',
+            answer: '&quot;Been So Good&quot; by Elevation Worship feat. Tiffany Hudson. ',
         },
         {
             id: 'item-4',
             question: 'Pupurihin Ka Sa Awit',
-            answer: "“Pupurihin Ka sa Awit,” performed by Powerhouse Worship and composed by Edith San Pedro.",
+            answer: "&quot;Pupurihin Ka sa Awit,&quot; performed by Powerhouse Worship and composed by Edith San Pedro.",
         },
         {
             id: 'item-5',
             question: 'Maghari',
-            answer: '"Maghari" by Victory Worship. Words and Music by Vivien Borres, Lee Simon Brown, Richard Garcia and Sofia Paderes',
+            answer: '&quot;Maghari by Victory Worship. Words and Music by Vivien Borres, Lee Simon Brown, Richard Garcia and Sofia Paderes',
         },
     ]
 
@@ -39,7 +39,7 @@ export default function FAQs() {
                 <div className="grid gap-8 md:grid-cols-5 md:gap-12">
                     <div className="md:col-span-2">
                         <h2 className="text-foreground text-4xl font-semibold">Our Line Up</h2>
-                        <p className="text-muted-foreground mt-2 text-balance text-lg">"Isang Gabi ng Papuri at Pasasalamat"</p>
+                        <p className="text-muted-foreground mt-2 text-balance text-lg">&quot;Isang Gabi ng Papuri at Pasasalamat&quot;</p>
                         <p className="text-muted-foreground mt-6 ">
                             While waiting for the big night, check out our <span className='font-bold'>official Spotify playlist </span>
                             and get into the vibe early!

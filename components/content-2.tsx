@@ -7,7 +7,7 @@ export default function ContentSection() {
 <section id="Goal" className="py-16 md:py-16">
   <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-8">
     <h2 className="relative z-10 max-w-xl text-4xl font-medium lg:text-5xl">
-      Sing with us, build with us—be part of God’s work!
+      Sing with us, build with us—be part of God&apos;s work!
     </h2>
 
     {/* Responsive grid: 1 col on mobile, 2 col on md */}
@@ -16,10 +16,10 @@ export default function ContentSection() {
       {/* Left side - text */}
       <div className="relative z-10 space-y-8">
         <p>
-          <span className="font-medium">UPCPI-JCTAG (Camarin)</span> is stepping into a new chapter as we expand our territory and continue to spread God’s work. Through this concert, we’re not just raising music—we’re raising hearts, faith, and the foundation to build our church.{" "}
+          <span className="font-medium">UPCPI-JCTAG (Camarin)</span> is stepping into a new chapter as we expand our territory and continue to spread God&apos;s work. Through this concert, we&apos;re not just raising music—we&apos;re raising hearts, faith, and the foundation to build our church.{" "}
         </p>
         <p>
-          Huge  thanks to our <span className='font-medium'>JCTAG-Music Team</span> and <span className='font-medium'>JCTAG-Media Team</span> for their dedication and hard work in making this event possible. Your passion and commitment are the heartbeat of this concert, and we can’t wait to see you all there!
+          Huge  thanks to our <span className='font-medium'>JCTAG-Music Team</span> and <span className='font-medium'>JCTAG-Media Team</span> for their dedication and hard work in making this event possible. Your passion and commitment are the heartbeat of this concert, and we can&apos;t wait to see you all there!
         </p>
         {/* Two small feature columns */}
         <div className="grid grid-cols-2 gap-3 pt-6 sm:gap-4">
@@ -29,7 +29,7 @@ export default function ContentSection() {
               <h3 className="text-sm font-medium">JCTAG-Music Team</h3>
             </div>
             <p className="text-muted-foreground text-sm">
-              Through music, we’re building a community that sings together, prays together, and grows together.
+              Through music, we&apos;re building a community that sings together, prays together, and grows together.
             </p>
           </div>
           <div className="space-y-2">
@@ -38,7 +38,7 @@ export default function ContentSection() {
               <h3 className="text-sm font-medium">JCTAG- Media Team</h3>
             </div>
             <p className="text-muted-foreground text-sm">
-              Through media, we’re building a community that share the message and mission to the world.
+              Through media, we&apos;re building a community that share the message and mission to the world.
             </p>
           </div>
         </div>

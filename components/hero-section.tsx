@@ -114,7 +114,7 @@ export default function HeroSection() {
                                     delay={0.9}
                                     as="p"
                                     className="mx-auto mt-2 max-w-2xl text-balance  font-light">
-                                    "Isang Gabi ng Papuri: Sama-samang Pagsamba at Pasasalamat."
+                                    &quot;Isang Gabi ng Papuri: Sama-samang Pagsamba at Pasasalamat.&quot;
                                 </TextEffect>
                                 <AnimatedGroup
                                     variants={{
@@ -136,8 +136,8 @@ export default function HeroSection() {
                                             asChild
                                             size="lg"
                                             className="rounded-xl px-5 text-base">
-                                            <Link href= '#Contact' >
-                                                <span className="text-nowrap">Buy Ticket Now!</span>
+                                            <Link href= 'https://www.google.com/maps/dir/14.7525722,121.0632692/Power+Fill+Camarin+Rd,+Caloocan,+Kalakhang+Maynila/@14.7552499,121.0597318,16.32z/data=!4m19!1m8!3m7!1s0x3397b01be1508fe1:0x856e06eae69a95b7!2sPower+Fill+Camarin+Rd!8m2!3d14.7581608!4d121.0624915!15sChVwb3dlcmZpbGwgZ2FzIHN0YXRpb26SAQtnYXNfc3RhdGlvbqoBYwoIL20vMDV3eTIQASoZIhVwb3dlcmZpbGwgZ2FzIHN0YXRpb24oADIfEAEiGwKYQBQGgjS1PQREc_-QCDo9hlQA5Szno-jElDIZEAIiFXBvd2VyZmlsbCBnYXMgc3RhdGlvbuABAA!16s%2Fg%2F11tk1_hp35!4m9!1m1!4e1!1m5!1m1!1s0x3397b01be1508fe1:0x856e06eae69a95b7!2m2!1d121.0624915!2d14.7581608!3e2?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D' >
+                                                <span className="text-nowrap">Get Directions!</span>
                                             </Link>
                                         </Button>
                                     </div>

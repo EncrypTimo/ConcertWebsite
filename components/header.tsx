@@ -6,7 +6,9 @@ import { Button } from '@/components/ui/button'
 import React from 'react'
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
-import ChurchLogo from '@/public/assets/Church Logo.png'
+import ChurchLogoLight from '@/public/assets/WhiteLogo.png'
+import ChurchLogoDark from '@/public/assets/Church Logo.png'
+import { useTheme } from 'next-themes' 
 
 const menuItems = [
     { name: 'Line Up', href: '#LineUp' },
@@ -17,6 +19,8 @@ const menuItems = [
 export const HeroHeader = () => {
     const [menuState, setMenuState] = React.useState(false)
     const [isScrolled, setIsScrolled] = React.useState(false)
+
+    const { resolvedTheme } = useTheme()
 
     React.useEffect(() => {
         const handleScroll = () => {
@@ -34,14 +38,15 @@ export const HeroHeader = () => {
                     <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
                         <div className="flex w-full justify-between lg:w-auto">
                             <div className="flex items-center gap-2">
-                                 <Image
-                                    src={ChurchLogo}
-                                    alt="Church Logo"
-                                    width={150}
-                                    height={50}
-                                    className="size-12 rounded-full"
+                                {/* ✅ Logo switches based on theme */}
+                                <Image
+                                src={resolvedTheme === 'dark' ? ChurchLogoLight : ChurchLogoDark}
+                                alt="Church Logo"
+                                width={150}
+                                height={50}
+                                className="size-12 rounded-full transition-all duration-300"
                                 />
-                                <h1 className='font-semibold'>UPCPI-JCTAG</h1>
+                                <h1 className="font-semibold">UPCPI-JCTAG</h1>
                             </div>
                            
 
@@ -87,16 +92,16 @@ export const HeroHeader = () => {
                                     asChild
                                     size="sm"
                                     className={cn(isScrolled && 'lg:hidden')}>
-                                    <Link href="https://www.google.com/maps/place/Power+Fill+Camarin+Rd/@14.7581018,121.0619483,18.91z/data=!4m10!1m2!2m1!1spowerfill+gas+station!3m6!1s0x3397b01be1508fe1:0x856e06eae69a95b7!8m2!3d14.7581608!4d121.0624915!15sChVwb3dlcmZpbGwgZ2FzIHN0YXRpb26SAQtnYXNfc3RhdGlvbqoBYwoIL20vMDV3eTIQASoZIhVwb3dlcmZpbGwgZ2FzIHN0YXRpb24oADIfEAEiGwKYQBQGgjS1PQREc_-QCDo9hlQA5Szno-jElDIZEAIiFXBvd2VyZmlsbCBnYXMgc3RhdGlvbuABAA!16s%2Fg%2F11tk1_hp35?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D">
-                                        <span>Get Directions</span>
+                                    <Link href="#Contact">
+                                        <span>Contact Us!</span>
                                     </Link>
                                 </Button>
                                 <Button
                                     asChild
                                     size="sm"
                                     className={cn(isScrolled ? 'lg:inline-flex' : 'hidden')}>
-                                    <Link href="https://www.google.com/maps/place/Power+Fill+Camarin+Rd/@14.7581018,121.0619483,18.91z/data=!4m10!1m2!2m1!1spowerfill+gas+station!3m6!1s0x3397b01be1508fe1:0x856e06eae69a95b7!8m2!3d14.7581608!4d121.0624915!15sChVwb3dlcmZpbGwgZ2FzIHN0YXRpb26SAQtnYXNfc3RhdGlvbqoBYwoIL20vMDV3eTIQASoZIhVwb3dlcmZpbGwgZ2FzIHN0YXRpb24oADIfEAEiGwKYQBQGgjS1PQREc_-QCDo9hlQA5Szno-jElDIZEAIiFXBvd2VyZmlsbCBnYXMgc3RhdGlvbuABAA!16s%2Fg%2F11tk1_hp35?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D">
-                                        <span>Get Directions</span>
+                                    <Link href="#Contact">
+                                        <span>Contact Us!</span>
                                     </Link>
                                 </Button>
                             </div>

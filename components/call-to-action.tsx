@@ -1,9 +1,12 @@
-import { Button } from '@/components/ui/button'
 import Link from 'next/link'
+import { useTheme } from 'next-themes'
+
 
 
 import CountdownClock from "@/components/CountdownClock";
 export default function CallToAction() {
+
+
     return (
         <section id="Contact" className="pt-32 md:pt-32">
             <div className="mx-auto max-w-5xl px-6">
