@@ -9,27 +9,27 @@ export default function FAQs() {
         {
             id: 'item-1',
             question: 'Binigyan mo ako ng Awit',
-            answer: '&quot;Binigyan Mo Ako Ng Awit&quot; from the album of Papuri! by Papuri Singers',
+            answer: 'Binigyan Mo Ako Ng Awit from the album of Papuri! by Papuri Singers',
         },
         {
             id: 'item-2',
             question: 'Hesus, Aking Musika ',
-            answer: '&quot;Hesus, Aking Musika&quot; from the album of Papuri! by Papuri Singers',
+            answer: 'Hesus, Aking Musika from the album of Papuri! by Papuri Singers',
         },
         {
             id: 'item-3',
             question: 'Been So Good',
-            answer: '&quot;Been So Good&quot; by Elevation Worship feat. Tiffany Hudson. ',
+            answer: 'Been So Good by Elevation Worship feat. Tiffany Hudson. ',
         },
         {
             id: 'item-4',
             question: 'Pupurihin Ka Sa Awit',
-            answer: "&quot;Pupurihin Ka sa Awit,&quot; performed by Powerhouse Worship and composed by Edith San Pedro.",
+            answer: "Pupurihin Ka sa Awit, performed by Powerhouse Worship and composed by Edith San Pedro.",
         },
         {
             id: 'item-5',
             question: 'Maghari',
-            answer: '&quot;Maghari by Victory Worship. Words and Music by Vivien Borres, Lee Simon Brown, Richard Garcia and Sofia Paderes',
+            answer: 'Maghari by Victory Worship. Words and Music by Vivien Borres, Lee Simon Brown, Richard Garcia and Sofia Paderes',
         },
     ]
 
