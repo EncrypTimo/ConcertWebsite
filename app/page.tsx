@@ -11,8 +11,8 @@ export default function Home() {
     <>
     <HeroSection />
       <LineUp />
-      <Pricing />
       <Content2 />
+      <Pricing />
       <CallToAction />
       <Footer />
       <ModeToggle />
